@@ -8,9 +8,8 @@ const Home = () => {
     const [movies, setMovies] = useState([]);
     const [option, setOption] = useState('popular');
 
-    const apiKey = import.meta.env.VITE_MOVIEDB_API_KEY
-
     useEffect(() => {
+        const apiKey = import.meta.env.VITE_MOVIEDB_API_KEY
         fetch(`https://api.themoviedb.org/3/movie/${option}?language=en-US&page=1&api_key=${apiKey}`)
         .then(response => response.json())
         .then(data => setMovies(data.results) )
