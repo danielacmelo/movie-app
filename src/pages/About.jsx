@@ -1,4 +1,3 @@
-import React from 'react';
 import tmdbLogo from '../assets/tmdbLogo.svg';
 
 const About = () => {
