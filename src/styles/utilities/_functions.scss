@@ -1,0 +1,12 @@
+// Functions
+@use 'sass:math';
+
+// Convert Px to Ems
+@function em($px, $bc: 16){
+    @return #{math.div($px,$bc)}em; 
+}
+
+// Convert Px to Rems
+@function rem($px, $bc: 16){
+    @return #{math.div($px,$bc)}em;  
+}
