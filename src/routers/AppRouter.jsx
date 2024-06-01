@@ -4,6 +4,7 @@ import About from "../pages/About";
 import Favourites from "../pages/Favourites";
 import Movie from "../pages/Movie";
 import Header from "../components/Header";
+import NotFound from "../pages/NotFound";
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -13,6 +14,7 @@ const AppRouter = () => (
             <Route path="/about" element={<About />} />
             <Route path="/favourites" element={<Favourites />} />
             <Route path="/movie/:id" element={<Movie />} />
+            <Route path="*" element={<NotFound />} />
         </Routes>
         {/* TODO: footer */}
     </BrowserRouter>
