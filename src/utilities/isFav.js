@@ -1,8 +1,4 @@
-function isFavourite(arr, path, id){
-
-    if(path === '/favourites'){
-        return true;
-    }
+function isFavourite(arr, id){
 
     if(arr.length === 0){
       return false;

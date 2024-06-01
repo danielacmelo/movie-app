@@ -31,7 +31,7 @@ const Home = () => {
         {movies && movies.length > 0 && 
             <ul>
                 {movies.map((movie) => (
-                    <li key={movie.id}> <MovieCard movieDetails={movie} isFavourite={isFavourite(favs, null,movie.id)} /></li>
+                    <li key={movie.id}> <MovieCard movieDetails={movie} isFavourite={isFavourite(favs, movie.id)} /></li>
                 ))}
             </ul>
         }    
