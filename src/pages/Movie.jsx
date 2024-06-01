@@ -1,9 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import MovieDetails from '../components/MovieDetails';
+import { useSelector } from 'react-redux';
+import isFavourite from '../utilities/isFav';
+
 
 const Movie = () => {
     
+    const favs = useSelector((state) => state.favs.items);
+
     const [movie, setMovie] = useState(false);
 
     const { id } = useParams();
@@ -20,7 +25,7 @@ const Movie = () => {
     <div>
       <h1>Movie</h1>
         {movie && 
-            <MovieDetails movieDetails={movie} />
+            <MovieDetails movieDetails={movie} isFavourite={isFavourite(favs, movie.id)} />
         }
     </div>
   );
