@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react';
 import MovieCard from '../components/MovieCard';
 import Options from '../components/Options';
-
+import { useSelector } from 'react-redux';
+import isFavourite from '../utilities/isFav';
 
 const Home = () => {
 
     const [movies, setMovies] = useState([]);
     const [option, setOption] = useState('popular');
+
+    const favs = useSelector((state) => state.favs.items);
 
     useEffect(() => {
         const apiKey = import.meta.env.VITE_MOVIEDB_API_KEY
@@ -28,7 +31,7 @@ const Home = () => {
         {movies && movies.length > 0 && 
             <ul>
                 {movies.map((movie) => (
-                    <li key={movie.id}> <MovieCard movieDetails={movie} /></li>
+                    <li key={movie.id}> <MovieCard movieDetails={movie} isFavourite={isFavourite(favs, null,movie.id)} /></li>
                 ))}
             </ul>
         }    
