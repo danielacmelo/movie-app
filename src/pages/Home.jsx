@@ -13,6 +13,10 @@ const Home = () => {
     const favs = useSelector((state) => state.favs.items);
 
     useEffect(() => {
+		document.title = `${appTitle} - Home`;
+	}, []);
+
+    useEffect(() => {
         const apiKey = import.meta.env.VITE_MOVIEDB_API_KEY
         fetch(`https://api.themoviedb.org/3/movie/${option}?language=en-US&page=1&api_key=${apiKey}`)
         .then(response => response.json())

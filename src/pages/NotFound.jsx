@@ -13,7 +13,7 @@ const NotFound = () => {
             <section className="section-not-found" >
                 <h2>404...</h2>
                 <p>Page not found.</p>
-                <p>Go to <Link to="/">Home</Link> page.</p>
+                <p>Go to <Link to="/">Home</Link>.</p>
             </section>
         </main>
     );

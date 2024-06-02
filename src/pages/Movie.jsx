@@ -14,7 +14,6 @@ const Movie = () => {
 
     const { id } = useParams();
 
-
     useEffect(() => {
 		document.title = `${appTitle} - Movie Details`;
 	}, []);

@@ -6,7 +6,7 @@ import { appTitle } from '../globals/globalVariables';
 const About = () => {
 
     useEffect(() => {
-		document.title = `${appTitle} - Contact`;
+		document.title = `${appTitle} - About`;
 	}, []);
 
     return (
