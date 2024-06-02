@@ -1,21 +1,21 @@
-nav {
-   ul {
-    background-color: $darkBlue;
-       @include flatten(true, false);
-       display: flex;
-   }
-   li {
-       flex: 1;
-   }
-   a {
-       display: block;
-       line-height: em(45);
-       text-align: center;
-       color: $lightWhite;
-    
-       text-decoration: none;
-         &:hover, &:focus, &:active {
-              background-color: rgba($lightWhite, 0.1);
-       }
-   } 
+.siteNavegation {
+
+    ul {
+        background-color: $darkBlue;
+        @include flatten(true, false);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        color: $lightWhite;
+        
+        text-decoration: none;
+            &:hover, &:focus, &:active {
+                background-color: rgba($lightWhite, 0.1);
+        }
+    } 
 }
+
