@@ -1,9 +1,10 @@
 .movie-card {
-    margin:25px 0;s
-
+    margin:25px 0;
+    line-height: 1.2;
+    
     p {
-        line-height: 1; 
-        margin: 10px 0;
+        margin: .625rem 0;
+        font-size: .9375rem;
     }
     
     button {
@@ -39,7 +40,7 @@
     }
 
     .movie-card-title {
-        font-size: 1rem;
+        font-size: 1.0625rem;
         font-weight: 700;
         margin: 0.5rem 0;
         color: $lightWhite;
@@ -47,11 +48,10 @@
 
     .movie-card-rating {
         color:$lightBlue;
-        margin-bottom: .9375rem;
+        margin-bottom: 1.5625rem;
     }
 
     .more-info-button {
         margin-right: .9375rem;
     }
-
 }

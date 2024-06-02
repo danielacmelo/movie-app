@@ -26,16 +26,16 @@ const Home = () => {
     return (
     <main>    
         <section className="section-home">
-            {/* <h1>Home</h1> */}
             <Options handleClick={handleClick} />
-        
-            {movies && movies.length > 0 && 
-                <ul className="movie-card-home">
-                    {movies.map((movie) => (
-                        <li key={movie.id}> <MovieCard movieDetails={movie} isFavourite={isFavourite(favs, movie.id)} /></li>
-                    ))}
-                </ul>
-            }    
+            <div className='movies-grid'>
+                {movies && movies.length > 0 && 
+                    <ul className="movie-card-home">
+                        {movies.map((movie) => (
+                            <li key={movie.id}> <MovieCard movieDetails={movie} isFavourite={isFavourite(favs, movie.id)} /></li>
+                        ))}
+                    </ul>
+                } 
+            </div>  
         </section>
     </main>
   );
