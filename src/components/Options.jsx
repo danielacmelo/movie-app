@@ -7,12 +7,16 @@ const Options = ( {handleClick} ) => {
         {name: 'Now Playing', value: 'now_playing'},
     ]
     return (
-        <nav>
+        <nav className="nav-options">
+            <ul className="nav-options">
             {
                 options.map((option) => (
-                    <button key={option.value} data-value={option.value} onClick={(event) => handleClick(event.target.dataset.value)}>{option.name}</button>
+                    <li className="nav-options" key={option.value}>
+                    <button className="nav-options" key={option.value} data-value={option.value} onClick={(event) => handleClick(event.target.dataset.value)}>{option.name}</button>
+                    </li>
                 ))
             }
+            </ul>
         </nav>
     );
 }

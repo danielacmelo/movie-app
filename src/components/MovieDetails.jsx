@@ -14,14 +14,17 @@ const MovieDetails = ({ movieDetails, isFavourite }) => {
     }
 
     return (
-        <div className="movie-details">
-            <img src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`} alt={movieDetails.title} />
-            <h3>{movieDetails.title}</h3>
-            <p>Release Date: {movieDetails.release_date}</p>
-            <p>Rating: {movieDetails.vote_average * 10}%</p>
-            <p>{movieDetails.overview}</p>
-            <FavButton movie={movieDetails} isFav={isFavourite}  onClick={handleClick}  />
-        </div>
+        <main>
+            <section className="movie-detail"> 
+                <h2 className="movie-detail-title">{movieDetails.title}</h2>
+                <p className="movie-detail-date" >Release Date: {movieDetails.release_date}</p>
+                <img className="movie-detail-poster" src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`} alt={movieDetails.title} />
+                <p className="movie-detail-rating">Rating: {movieDetails.vote_average * 10}%</p>
+                <h3>Overview</h3>
+                <p className="movie-detail-overview">{movieDetails.overview}</p>
+                <FavButton movie={movieDetails} isFav={isFavourite}  onClick={handleClick}  />
+            </section>
+        </main>
 )};
 
 export default MovieDetails;

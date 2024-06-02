@@ -9,25 +9,12 @@ h1, h2, h3, h4 {
     font-family: $font;
 }
 
-h1, h2, h3, h4, p {
-    margin-top: 0;
-}
-
 h2 {
-    color: $lightBlue
+    color: $lightBlue;
+    margin: 2.5rem 0 1.875rem;
+    font-size:  1.25rem;
 }
 
 p {
-    line-height: 1.4;
-    font-size: 1rem;
-}
-
-button {
-    color: $lightWhite;
-    background-color: $lightBlue;
-    border: 1px solid $lightBlue;
-    border-radius: 5px;
-    
-
-
+    line-height: 1.6;
 }

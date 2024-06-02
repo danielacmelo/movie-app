@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 275.4">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 498 107">
   <defs>
     <style>
       .cls-1 {
@@ -10,17 +10,20 @@
         fill: #8fa2d1;
       }
 
+      .cls-3, .cls-2 {
+        isolation: isolate;
+      }
+
       .cls-2 {
         font-family: BernardMT-Condensed, 'Bernard MT Condensed';
         font-size: 106.1px;
       }
     </style>
   </defs>
-  <text/>
-  <text/>
-  <text/>
-  <g>
-    <path class="cls-1" d="M499.3,119.4h-62.6c-.8,0-1.5.7-1.5,1.5v48.3c0,.8.7,1.5,1.5,1.5h62.6c.8,0,1.5-.7,1.5-1.5v-48.3c0-.8-.7-1.5-1.5-1.5ZM472,123.3h6.7v4h-6.7v-4ZM478.8,145c0,.8-.5,1.6-1.2,2l-14.7,8.2c-.4.2-.7.3-1.1.3s-.8-.1-1.2-.3c-.7-.4-1.1-1.2-1.1-2v-16.4c0-.8.4-1.6,1.1-2,.7-.4,1.6-.4,2.3,0l14.7,8.2c.7.4,1.2,1.2,1.2,2ZM457.2,123.3h6.7v4h-6.7v-4ZM448.1,167.4h-7.1v-4h7.1v4ZM449.2,127.3h-6.7v-4h6.7v4ZM463.7,167.4h-7.1v-4h7.1v4ZM479.3,167.4h-7.1v-4h7.1v4ZM486.8,123.3h6.7v4h-6.7v-4ZM494.9,167.4h-7.1v-4h7.1v4Z"/>
-    <text class="cls-2" transform="translate(11.2 173.2) scale(1 1)"><tspan x="0" y="0">CineMovie</tspan></text>
+  <path class="cls-1" d="M492.3,42.7h-62.6c-.8,0-1.5.7-1.5,1.5v48.3c0,.8.7,1.5,1.5,1.5h62.6c.8,0,1.5-.7,1.5-1.5v-48.3c0-.8-.7-1.5-1.5-1.5ZM465,46.6h6.7v4h-6.7v-4ZM471.8,68.3c0,.8-.5,1.6-1.2,2l-14.7,8.2c-.4.2-.7.3-1.1.3s-.8,0-1.2-.3c-.7-.4-1.1-1.2-1.1-2v-16.4c0-.8.4-1.6,1.1-2s1.6-.4,2.3,0l14.7,8.2c.7.4,1.2,1.2,1.2,2h0ZM450.2,46.6h6.7v4h-6.7v-4ZM441.1,90.7h-7.1v-4h7.1v4ZM442.2,50.6h-6.7v-4h6.7v4ZM456.7,90.7h-7.1v-4h7.1v4ZM472.3,90.7h-7.1v-4h7.1v4ZM479.8,46.6h6.7v4h-6.7v-4ZM487.9,90.7h-7.1v-4h7.1v4Z"/>
+  <g class="cls-3">
+    <g class="cls-3">
+      <text class="cls-2" transform="translate(4.2 96.5)"><tspan x="0" y="0">CineMovie</tspan></text>
+    </g>
   </g>
 </svg>

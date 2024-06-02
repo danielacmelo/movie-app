@@ -9,7 +9,7 @@ const FavButton = ({ movie, isFav, onClick }) => {
     }
 
     return (
-        <button onClick={handleClick}>
+        <button className="" onClick={handleClick}>
         {isFav ? 'Remove from' : 'Add to'} Favorites
         </button>
     );

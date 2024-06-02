@@ -1,8 +1,11 @@
-.movie-card {
+.movie-detail {
     margin:25px 0;
+    
+    h3{
+        font-size: 1rem;
+    }
 
     p {
-        line-height: 1; 
         margin: 10px 0;
     }
     
@@ -32,26 +35,27 @@
         text-decoration: none;
     }
 
-    .movie-card-poster {
+    .movie-detail-poster {
         width: 17.5rem;
         height: 26.25rem;
         object-fit: cover;
+        margin: .625rem 0;
     }
 
-    .movie-card-title {
+    .movie-detail-title {
         font-size: 1rem;
         font-weight: 700;
         margin: 0.5rem 0;
         color: $lightWhite;
     }
 
-    .movie-card-rating {
+    .movie-detail-rating {
         color:$lightBlue;
         margin-bottom: .9375rem;
     }
 
-    .more-info-button {
-        margin-right: .9375rem;
+    .movie-detail-overview {
+        margin-bottom: 30px;
     }
 
 }
