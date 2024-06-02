@@ -1,5 +1,4 @@
 nav {
-   background-color: black;
    ul {
        @include flatten(true, false);
        display: flex;
@@ -11,10 +10,10 @@ nav {
        display: block;
        line-height: em(45);
        text-align: center;
-       color: $light;
+       color: $lightWhite;
        text-decoration: none;
          &:hover, &:focus, &:active {
-              background-color: rgba($light, 0.1);
+              background-color: rgba($lightWhite, 0.1);
        }
    } 
 }

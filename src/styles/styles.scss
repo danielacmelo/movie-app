@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 // Functions
-@import './utilities/functions.scss';
+// @import './utilities/functions.scss';
 
 // Settings
 @import './base/_settings';
@@ -19,6 +19,8 @@
 // Components
 @import './components/body';
 @import './components/nav';
+@import './components/footer';
+@import './components/header';
 
 
 

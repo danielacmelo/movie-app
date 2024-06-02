@@ -1,9 +1,10 @@
 import Nav from "./Nav";
+import cinemovieLogo from '../assets/cinemovieLogo.svg'
 
 const Header = () => {
   return (
-    <header>
-        <img src="https://placehold.co/50x50" alt="Movie App Logo" />
+    <header className="siteHeader">
+        <img className="logo" src={cinemovieLogo}  alt="Movie App Logo" />
         <Nav />
     </header>
   );
