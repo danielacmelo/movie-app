@@ -13,6 +13,21 @@ h1, h2, h3, h4, p {
     margin-top: 0;
 }
 
+h2 {
+    color: $lightBlue
+}
+
 p {
     line-height: 1.4;
+    font-size: 1rem;
+}
+
+button {
+    color: $lightWhite;
+    background-color: $lightBlue;
+    border: 1px solid $lightBlue;
+    border-radius: 5px;
+    
+
+
 }

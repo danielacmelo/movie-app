@@ -1,11 +1,15 @@
-// Footer
 footer {
     background-color: $mediumBlue; 
     padding: .875rem;
     text-align: center;
     height: 5rem;
     font-size: small;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
     p{
         margin: .3125rem;
     }
 }
+

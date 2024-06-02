@@ -1,0 +1,29 @@
+.movie-card {
+    ul {
+        list-style-type: none;
+    }
+
+    p {
+        line-height: 1; 
+        margin: 10px 0;
+    }
+
+    .movie-card-poster {
+        width: 17.5rem;
+        height: 26.25rem;
+        object-fit: cover;
+    }
+
+    .movie-card-title {
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0.5rem 0;
+        color: $lightWhite;
+    }
+
+    .movie-card-rating {
+        color:$lightBlue;
+        margin-bottom: .9375rem;
+    }
+
+}

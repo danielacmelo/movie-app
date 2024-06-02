@@ -5,14 +5,19 @@ const Favourites = () => {
     const favs = useSelector((state) => state.favs.items);
     return (
         <div>
-        <h1>Favourites</h1>
+        <h2> Your Favourites</h2>
         {favs && favs.length > 0 ? 
                 <ul>
                     {favs.map((movie) => (
                         <li key={movie.id}> <MovieCard movieDetails={movie} isFavourite={true} /></li>
                     ))}
                 </ul>
-            : <p>No favourites yet</p>}    
+            : 
+            <div>
+                <p>You have no favourite movies yet.</p>
+                <p>Get started by clicking the heart icon on the movie cards to add them to your favorites!</p>
+            </div>
+            }    
         </div>
     );
 }

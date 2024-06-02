@@ -16,12 +16,12 @@ const MovieCard = ({ movieDetails, isFavourite }) => {
 
     return (
     <div className="movie-card">
-        <img src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`} alt={movieDetails.title} />
-        <h3>{movieDetails.title}</h3>
+        <img className='movie-card-poster' src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`} alt={movieDetails.title} />
+        <h2 className='movie-card-title' >{movieDetails.title}</h2>
         <p>Release Date: {movieDetails.release_date}</p>
-        <p>Rating: {movieDetails.vote_average * 10}%</p>
-        <p>{movieDetails.overview}</p>
-        <button>
+        <p className='movie-card-rating' >Rating: {movieDetails.vote_average * 10}%</p>
+        {/* <p className='movie-card-overview' >{movieDetails.overview}</p> */}
+        <button className='more-info-bttn'>
         <Link to={`/movie/${movieDetails.id}`}>More Info</Link>
         </button>
         <FavButton movie={movieDetails} isFav={isFavourite} onClick={handleClick}  />
