@@ -3,6 +3,7 @@ import MovieCard from '../components/MovieCard';
 import Options from '../components/Options';
 import { useSelector } from 'react-redux';
 import isFavourite from '../utilities/isFav';
+import { appTitle } from '../globals/globalVariables';
 
 const Home = () => {
 

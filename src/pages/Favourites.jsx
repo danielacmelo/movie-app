@@ -1,8 +1,15 @@
 import { useSelector } from 'react-redux';
 import MovieCard from '../components/MovieCard';
+import { useEffect } from 'react';
+import { appTitle } from '../globals/globalVariables';
 
 const Favourites = () => {
     const favs = useSelector((state) => state.favs.items);
+
+    useEffect(() => {
+		document.title = `${appTitle} - Favourites`;
+	}, []);
+
     return (
         <main>
             <section className="section-favourites">
@@ -16,7 +23,7 @@ const Favourites = () => {
                     : 
                     <div>
                         <p>You have no favourite movies yet.</p>
-                        <p>Get started by clicking the heart icon on the movie cards to add them to your favorites!</p>
+                        <p>Get started by clicking the heart icon on the movie to add them to your favorites!</p>
                     </div>
                     }    
             </section>

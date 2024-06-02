@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 .wrapper {
     max-width: 120rem;
     @include mc;

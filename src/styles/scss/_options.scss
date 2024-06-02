@@ -1,3 +1,7 @@
+// Options Styles
+@use "variables" as *;
+@use "mixins" as *;
+
 .nav-options {
 
     ul {
@@ -5,7 +9,7 @@
         @include flatten(true, false);
         display: flex;
         justify-content: space-between;
-        margin:0 1.25rem;
+        margin:0 .9375rem;
     }
 
     li {

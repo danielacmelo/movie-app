@@ -1,9 +1,10 @@
+    // About Styles
+    @use "variables" as *;
+    
     .sectionAbout { 
         p {
             margin-bottom: 30px;
             line-height: 1.8;
-            font-weight: 600;
-        
         }
 
         .tmdbLogo {

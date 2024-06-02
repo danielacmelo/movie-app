@@ -6,12 +6,12 @@ import Movie from "../pages/Movie";
 import Header from "../components/Header";
 import NotFound from "../pages/NotFound";
 import Footer from "../components/Footer";
-import { appAuthor } from '../globals/globalVariables';
+import { appAuthor, appTitle } from '../globals/globalVariables';
 
 const AppRouter = () => (
     <BrowserRouter>
         <div className="wrapper">
-            <Header />
+            <Header title={appTitle} />
             <Routes>
                 <Route path="/" exact element={<Home />} />
                 <Route path="/about" element={<About />} />

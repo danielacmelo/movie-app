@@ -1,3 +1,6 @@
+// Main Styles
+@use "variables" as *;
+
 main {
     padding: $section-padding;
 }

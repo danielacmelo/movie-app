@@ -1,0 +1,26 @@
+
+/* CSS Document */
+
+// Imports
+
+// Utilities
+@use 'utility-classes';
+
+// Resets and Defaults
+@use 'reset';
+@use 'type';
+
+// Components
+@use 'body';
+@use 'nav';
+@use 'footer';
+@use 'header';
+@use 'about';
+@use 'movieCard';
+@use 'options';
+@use 'main';
+@use 'movieDetail';
+@use 'gridMovies';
+
+
+
