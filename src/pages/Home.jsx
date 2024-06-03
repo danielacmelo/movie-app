@@ -36,7 +36,7 @@ const Home = () => {
                 {movies && movies.length > 0 && 
                     <ul className='movies-grid'>
                         {movies.map((movie) => (
-                            <li key={movie.id}> <MovieCard movieDetails={movie} isFavourite={isFavourite(favs, movie.id)} /></li>
+                            <li key={movie.id}> <MovieCard movieDetails={movie} isFavourite={isFavourite(favs, movie.id)} displayOverview={false} /></li>
                         ))}
                     </ul>
                 } 

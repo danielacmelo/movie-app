@@ -3,7 +3,7 @@ import FavButton from './FavButton';
 import { useDispatch } from 'react-redux';
 import { addFav, removeFav } from '../features/favs/favSlice';
 
-const MovieCard = ({ movieDetails, isFavourite }) => {
+const MovieCard = ({ movieDetails, isFavourite, displayOverview }) => {
     const dispatch = useDispatch();
     const handleClick = (addToFav, movie) => {
         console.log(addToFav, movie);
@@ -12,6 +12,17 @@ const MovieCard = ({ movieDetails, isFavourite }) => {
         } else {
             dispatch(removeFav(movie));
         }
+    }
+
+    const getFirstNWords = (inputString, count) => {
+        const wordsArray = inputString.split(' ');
+        const wordCount = wordsArray.length
+        const first20Words = wordsArray.slice(0, count);
+        let resultString = first20Words.join(' ');
+        if(wordCount > count) {
+            resultString += '...';
+        }
+        return resultString;
     }
 
     return (
@@ -28,9 +39,9 @@ const MovieCard = ({ movieDetails, isFavourite }) => {
         <div>
             <p className="movie-card-rating" >Rating: {Math.round(movieDetails.vote_average * 10)}%</p>
         </div>
-        {/* <div>
-            <p className='movie-card-overview' >{movieDetails.overview}</p>
-        </div> */}
+        {displayOverview && (<div>
+            <p className='movie-card-overview' >{getFirstNWords(movieDetails.overview, 10)}</p>
+        </div> )}
         <div>
             <button className="more-info-button">
             <Link to={`/movie/${movieDetails.id}`}>More Info</Link>

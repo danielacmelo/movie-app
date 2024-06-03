@@ -19,7 +19,7 @@ const Favourites = () => {
                 {favs && favs.length > 0 ? 
                         <ul className="movies-grid" >
                             {favs.map((movie) => (
-                                <li key={movie.id}> <MovieCard movieDetails={movie} isFavourite={true} /></li>
+                                <li key={movie.id}> <MovieCard movieDetails={movie} isFavourite={true} displayOverview={true}/></li>
                             ))}
                         </ul>
                     : 
