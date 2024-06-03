@@ -5,12 +5,15 @@
 
 // Utilities
 @use 'utility-classes';
+@use 'mixins';
+
 
 // Resets and Defaults
 @use 'reset';
 @use 'type';
+@use 'variables';
 
-// Components
+// Components and pages
 @use 'body';
 @use 'nav';
 @use 'footer';
@@ -20,7 +23,8 @@
 @use 'options';
 @use 'main';
 @use 'movieDetail';
-@use 'gridMovies';
-
+@use 'moviesGrid';
+@use 'favourites';
+@use 'wrapper';
 
 

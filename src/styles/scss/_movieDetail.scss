@@ -1,5 +1,6 @@
 // Movie Detail Styles
 @use "variables" as *;
+@use "mixins" as *;
 
 .movie-detail {
     margin:25px 0;
@@ -61,4 +62,28 @@
         margin-bottom: 30px;
     }
 
-}
+    
+    @include mq(37.5rem){
+
+            display:grid;
+            grid-template-columns: repeat(2, 360px);
+            grid-column: repeat(4, 1fr);
+            gap: .125rem;
+        }
+
+        .movie-detail-poster {
+            grid-column: 1/2;
+            grid-row: 1/5;
+        }
+
+        .fav-bttn {
+            grid-column: 2/3;
+            grid-row: 5/6;
+        }
+        
+
+
+    }
+
+   
+

@@ -1,0 +1,25 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+
+@include mq(37.5rem){
+
+    .movies-grid{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 1.25rem;
+        padding: 1rem;
+        ;
+        // justify-content: center;
+        // row-gap: 1.25rem
+    }
+}
+
+@include mq(62rem){
+    .movies-grid{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+

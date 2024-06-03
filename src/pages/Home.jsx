@@ -32,9 +32,9 @@ const Home = () => {
     <main>    
         <section className="section-home">
             <Options handleClick={handleClick} />
-            <div className='movies-grid'>
+            <div>
                 {movies && movies.length > 0 && 
-                    <ul className="movie-card-home">
+                    <ul className='movies-grid'>
                         {movies.map((movie) => (
                             <li key={movie.id}> <MovieCard movieDetails={movie} isFavourite={isFavourite(favs, movie.id)} /></li>
                         ))}
