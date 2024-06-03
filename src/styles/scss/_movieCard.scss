@@ -23,6 +23,7 @@
     button:hover {
         background-color: $darkBlue;
         border: 1px solid $lightBlue;
+        color: $lightBlue;
     }
 
     button a ,
@@ -56,5 +57,6 @@
 
     .more-info-button {
         margin-right: .9375rem;
+
     }
 }
