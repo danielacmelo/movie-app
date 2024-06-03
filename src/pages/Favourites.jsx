@@ -23,11 +23,10 @@ const Favourites = () => {
                             ))}
                         </ul>
                     : 
-                    <div>
+                    <div className='no-favourites'>
                         <p>You have no favourite movies yet.</p>
                         <p>Get started by clicking the heart icon on the movie on the <Link to="/">Home</Link> to add them to your favorites!</p>
                         <img className="heartIcon" src={heartIcon} alt="Heart Icon" />
-
                     </div>
                     }    
             </section>

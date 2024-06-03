@@ -1,24 +1,44 @@
     // About Styles
     @use "variables" as *;
+    @use "mixins" as *;
     
-    .sectionAbout { 
+    .section-about,
+    .section-not-found { 
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
         p {
-            margin-bottom: 30px;
-            line-height: 1.8;
+            line-height: 1.6;
         }
 
         .tmdbLogo {
             width: 4.75rem;
             height: 3.375rem;
             display: block;
-            width: 50%;
-            margin: 3.75rem auto auto;
+            justify-content: center;
+            margin: 3.125rem auto auto;
         }
 
         .tmdb {
-            margin-top: 2.8125rem;
+            margin-top: 10px;
             font-weight: normal;
             font-size: .9375rem;
         }
+        
 
-}
+        @include mq(62rem){
+            h2{
+                font-size: 1.5rem
+            }
+    
+            p {
+                font-size: 1.25rem  
+            }
+
+            .tmdb {
+                font-size: 1.125rem;
+            }
+        }
+
+    }
