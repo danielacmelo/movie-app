@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="site-header">
         <Link to="/">
-            <  img className="logo" src={cinemovieLogo}  alt="Movie App Logo" />
+            <h1><  img className="logo" src={cinemovieLogo}  alt="Movie App Logo" /></h1>
         </Link>
         <Nav />
     </header>
