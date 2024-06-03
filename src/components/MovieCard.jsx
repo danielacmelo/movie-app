@@ -26,7 +26,7 @@ const MovieCard = ({ movieDetails, isFavourite }) => {
             <p className="movie-card-date">Release Date: {movieDetails.release_date}</p>
         </div>
         <div>
-            <p className="movie-card-rating" >Rating: {movieDetails.vote_average * 10}%</p>
+            <p className="movie-card-rating" >Rating: {Math.round(movieDetails.vote_average * 10)}%</p>
         </div>
         {/* <div>
             <p className='movie-card-overview' >{movieDetails.overview}</p>

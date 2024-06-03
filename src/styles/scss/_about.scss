@@ -13,16 +13,16 @@
         }
 
         .tmdbLogo {
-            width: 4.75rem;
+            width: 4.375rem;
             height: 3.375rem;
             display: block;
             justify-content: center;
-            margin: 3.125rem auto auto;
+            margin: 10px auto auto;
         }
 
         .tmdb {
-            margin-top: 10px;
-            font-weight: normal;
+            margin-top: 1.5625rem;
+            font-weight: 600;
             font-size: .9375rem;
         }
         
@@ -38,6 +38,10 @@
 
             .tmdb {
                 font-size: 1.125rem;
+            }
+
+            .tmdbLogo {
+                margin: 1.25rem auto auto;
             }
         }
 
