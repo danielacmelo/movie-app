@@ -6,41 +6,43 @@
         display: flex;
         flex-direction: column;
         align-items: left;
-    }   
-
-    .no-favourites p {
-     margin-bottom: 1.875rem;
-    }
-
-    @include mq(37.5rem){
-        p {
-            margin-bottom: 3.125rem ;
-        }
-    }
-
+    
     @include mq(62rem){
         h2{
             font-size: 1.5rem
         }
-
-        p {
-            font-size: 1.25rem  
-        }
     }
-   
+}  
 
     .heartIcon{
         display: block;
         justify-content: center;
         height: 6.25rem;
         margin: 3.75rem auto 1.25rem;
+
+
+        @include mq(37.5rem){
+                margin: 4.375rem auto 1.25rem;
+            }
     }
 
 
-    @include mq(37.5rem){
-        .heartIcon{
-            height: 6.25rem;
-            margin: 4.375rem auto 1.25rem;
+    .no-favourites {
+        p {
+            margin-bottom: 1.875rem;
         }
-    }
+        
+        @include mq(37.5rem){
+            p {
+                margin-bottom: 3.125rem ;
+            
+            }
+        }
 
+        @include mq(62rem){
+            p {
+                font-size: 1.25rem  
+            }
+
+        }
+    }        
