@@ -4,13 +4,15 @@
 
 .movie-detail {
     margin:25px 0;
-    
+   
     h3{
         font-size: 1rem;
     }
 
     p {
-        margin: 10px 0;
+        margin: .625rem 0;
+        font-size: .9375rem;
+        line-height: 1.6;
     }
     
     button {
@@ -21,11 +23,13 @@
         padding: .375rem .75rem;
         margin-bottom: .625rem;
         text-decoration: none;
+        cursor: pointer;
     }
 
     button:hover {
         background-color: $darkBlue;
         border: 1px solid $lightBlue;
+        color: $lightBlue;
     }
 
     button a ,
@@ -40,10 +44,9 @@
     }
 
     .movie-detail-poster {
-        width: 17.5rem;
+        width: 16.875rem;
         height: 26.25rem;
         object-fit: cover;
-        margin: .625rem 0;
     }
 
     .movie-detail-title {
@@ -62,13 +65,17 @@
         margin-bottom: 30px;
     }
 
-    
     @include mq(37.5rem){
 
             display:grid;
             grid-template-columns: repeat(2, 360px);
             grid-column: repeat(4, 1fr);
             gap: .125rem;
+            margin-left: 1.25rem
+        }
+
+        h2 {
+            font-size: 1.5rem;
         }
 
         .movie-detail-poster {
@@ -80,14 +87,6 @@
             grid-column: 2/3;
             grid-row: 5/6;
         }
-        
-    }
-
-   
-    .section-movie {
-        display:flex; 
-        flex-direction: column;
-        justify-content: center;
         
     }
 

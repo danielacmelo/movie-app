@@ -7,9 +7,10 @@ import Header from "../components/Header";
 import NotFound from "../pages/NotFound";
 import Footer from "../components/Footer";
 import { appAuthor, appTitle } from '../globals/globalVariables';
+import { APP_FOLDER_NAME } from '../globals';
 
 const AppRouter = () => (
-    <BrowserRouter>
+    <BrowserRouter basename={`/${APP_FOLDER_NAME}`}>
         <div className="wrapper">
             <Header title={appTitle} />
             <Routes>

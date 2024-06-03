@@ -27,13 +27,11 @@ const Movie = () => {
     }, [id])
 
   return (
-    <main>
-        <section className='section-movie'>
-                {movie && 
-                    <MovieDetails movieDetails={movie} isFavourite={isFavourite(favs, movie.id)} />
-                }
-        </section>
-    </main>
+    <>
+        {movie && 
+            <MovieDetails movieDetails={movie} isFavourite={isFavourite(favs, movie.id)} />
+        }     
+    </>
   );
 }
 

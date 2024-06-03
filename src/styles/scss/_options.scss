@@ -9,7 +9,7 @@
         @include flatten(true, false);
         display: flex;
         justify-content: space-between;
-        margin:0 .9375rem;
+        margin:0;
     }
 
     li {
@@ -31,13 +31,6 @@
         color: $lightBlue;
         }
     
-   
-    // img{
-    //     width: 1.5rem;
-    //     height: 2.125rem;
-    // }
-
-    //mediaquery
     
     @include mq(37.5rem){
 
@@ -49,6 +42,8 @@
 
         ul {
             justify-content: center;
+            margin: 0 .9375rem
+            
         }
          
         }
